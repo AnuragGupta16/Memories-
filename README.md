@@ -1,5 +1,5 @@
 
-Deployed Link - https://memories-stays.netlify.app/
+Deployed Link - 
 
 Project Overview
 ## The Memories Application is a full-stack web application designed to help users maintain and cherish their cherished memories and historic moments. It provides a platform for individuals, families, and friends to store, organize, and reminisce about important events, milestones, and experiences. The application offers features such as searching with keywords, pagination for efficient browsing, secure authentication, authorization, and image uploading.
