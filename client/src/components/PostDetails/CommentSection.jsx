@@ -18,21 +18,21 @@ const CommentSection = ({ post }) => {
   const commentsRef = useRef();
 
   const handleComment = async (parentCommentId = null, commentText, userName) => {
-    // Construct the comment text with user name
+   
     const newCommentText = `${userName}: ${commentText}`;
 
-    // Dispatch the commentPost action with the post ID, parent comment ID, and comment text
+  
     const newComments = await dispatch(commentPost({ parentCommentId, newCommentText }, post._id));
-    // Clear the comment input field
+   
     setComment('');
 
-    // Update the comments state with the new comments
+   
     setComments(newComments);
 
-    // Scroll to the bottom of the comments section
+  
     commentsRef.current.scrollIntoView({ behavior: 'smooth' });
 
-    // Reset replyingTo state after adding the comment
+ 
     setReplyingTo(null);
   };
 
